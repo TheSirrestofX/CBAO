@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Buildings & Architecture - Bidding</title>
+    <link rel="stylesheet" href="/CSS/Bidding.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+    <header class="navbar">
+    <div class="logo-container">
+      <img src="/Img/CBAO logo.jpg" alt="CBAO Logo" class="logo" />
+      <span class="logo-text">City Buildings & Architecture Office</span>
+    </div>
+    <nav class="nav-links">
+      <a href="/Auth&Firebase/dashboard.html">Home<i class="fa fa-home"></i></a>
+      <a href="/HTML/profile.html">Profile <i class="fa fa-address-card"></i></a>
+      <a href="https://new.baguio.gov.ph/city-building-and-architecture-office/about">About Us <i class="fa fa-users"></i></a>
+      <a href="/Auth&Firebase/LoginSignup.html">Logout <i class="fa fa-sign-out"></i></a>
+    </nav>
+  </header>6
+
+    <div class="container">
+        <h2>Current Bids</h2>
+        
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search bids...">
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <table class="bids-table" id="reportsTable">
+            <thead>
+                <tr>
+                    <th>Bid ID</th>
+                    <th>Project Name</th>
+                    <th>Description</th>
+                    <th>Opening Date</th>
+                    <th>Closing Date</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>BID-2023-045</td>
+                    <td>Central Park Renovation</td>
+                    <td>Landscaping and pathway reconstruction</td>
+                    <td>2023-05-10</td>
+                    <td>2023-06-15</td>
+                    <td><span class="status open">Open</span></td>
+                    <td>
+                        <button class="action-btn view-btn">View</button>
+                        <button class="action-btn bid-btn">Submit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>BID-2023-046</td>
+                    <td>Main Street Bridge</td>
+                    <td>Construction of pedestrian bridge</td>
+                    <td>2023-05-20</td>
+                    <td>2023-06-30</td>
+                    <td><span class="status open">Open</span></td>
+                    <td>
+                        <button class="action-btn view-btn">View</button>
+                        <button class="action-btn bid-btn">Submit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>BID-2023-044</td>
+                    <td>Downtown Plaza</td>
+                    <td>Public space redesign</td>
+                    <td>2023-04-15</td>
+                    <td>2023-05-30</td>
+                    <td><span class="status review">Under Review</span></td>
+                    <td>
+                        <button class="action-btn view-btn">View</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>BID-2023-043</td>
+                    <td>Northside Library</td>
+                    <td>New library construction</td>
+                    <td>2023-03-01</td>
+                    <td>2023-04-15</td>
+                    <td><span class="status closed">Closed</span></td>
+                    <td>
+                        <button class="action-btn view-btn">View</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        
+    </div>
+    <footer class="footer">© 2025 CBAO</footer>
+
+    <script src="/javascript/search.js"></script>
+</body>
+</html>

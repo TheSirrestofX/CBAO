@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CBAO Dashboard</title>
+  <link rel="stylesheet" href="/CSS/dashboard.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo-container">
+      <img src="/Img/CBAO logo.jpg" alt="CBAO Logo" class="logo">
+      <span class="logo-text">City Buildings & Architecture Office</span>
+    </div>
+    <nav class="nav-links">
+      <a href="/HTML/profile.html">Profile <i class="fa fa-address-card"></i></a>
+      <a href="https://new.baguio.gov.ph/city-building-and-architecture-office/about">About Us <i class="fa fa-users"></i></a>
+      <a href="/Auth&Firebase/LoginSignup.html">Logout <i class="fa fa-sign-out"></i></a>
+    </nav>
+  </header>
+
+  <div class="carousel-container">
+    <button class="carousel-button up" aria-label="Previous card">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+    
+    <div class="carousel-stack">
+      <a href="/HTML/form.html" class="carousel-card active">
+        <i class="fa fa-plus-square"></i>
+        <div class="card-title">Program of Work</div>
+        <div class="card-description">Add Projects</div>
+      </a>
+      <a href="/HTML/report.html" class="carousel-card">
+        <i class="fa fa-file-text"></i>
+        <div class="card-title">Reports</div>
+        <div class="card-description">View and Manage Reports</div>
+      </a>
+      <a href="/HTML/bidding.html" class="carousel-card">
+        <i class="fa fa-list-alt"></i>
+        <div class="card-title">Biddings</div>
+        <div class="card-description">Manage Bidding Processes</div>
+      </a>
+      <a href="/HTML/Ongoing.html" class="carousel-card">
+        <i class="fa fa-sync"></i>
+        <div class="card-title">Ongoing Projects</div>
+        <div class="card-description">Track Ongoing Projects</div>
+      </a>
+    </div>
+    
+    <button class="carousel-button down" aria-label="Next card">
+      <i class="fas fa-chevron-down"></i>
+    </button>
+  </div>
+
+  <footer class="footer">© 2025 CBAO</footer>
+
+  <script src="/javascript/carousel.js"></script>
+</body>
+</html>

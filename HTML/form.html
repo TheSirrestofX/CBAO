@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="stylesheet" href="/CSS/form.css">
+    <script type="importmap">
+        {
+        "imports": {
+            "firebase/app": "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js",
+            "firebase/firestore": "https://www.gstatic.com/firebasejs/10.11.1/firebase-firestore.js"
+        }
+        }
+    </script>
+
+    <script type="module" src="/javascript/form.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+    <div class="logo-container">
+      <img src="/Img/CBAO logo.jpg" alt="CBAO Logo" class="logo"/>
+      <span class="logo-text">City Buildings & Architecture Office</span>
+    </div>
+    <nav class="nav-links">
+      <a href="/Auth&Firebase/dashboard.html">Home<i class="fa fa-home"></i></a>
+      <a href="/HTML/profile.html">Profile <i class="fa fa-address-card"></i></a>
+      <a href="https://new.baguio.gov.ph/city-building-and-architecture-office/about">About Us <i class="fa fa-users"></i></a>
+      <a href="/Auth&Firebase/LoginSignup.html">Logout <i class="fa fa-sign-out"></i></a>
+    </nav>
+  </header>
+    <div class="head">
+        <h1>SUBMISSION FORM</h1>
+
+    </div>
+<form id="form">
+
+  <div class="field">
+    <label class="label">Project Title</label>
+  </div>
+  <div class="control">
+    <input class="input" name="projectTitle" type="text" placeholder="Project Title">
+  </div>
+
+  <div class="field">
+    <label class="label">Barangay/Location</label>
+  </div>
+  <div class="control">
+    <input class="input" name="location" type="text" placeholder="Barangay/Location">
+  </div>
+
+  <div class="field">
+    <label class="label">Project in charge</label>
+  </div>
+  <div class="control">
+    <input class="input" name="inCharge" type="text" placeholder="Project in charge">
+  </div>
+
+  <div class="field">
+    <label class="label">Source of Funds</label>
+  </div>
+  <div class="control">
+    <input class="input" name="sourceOfFunds" type="text" placeholder="Source of Funds">
+  </div>
+
+  <div class="field">
+    <label class="label">Appropriation</label>
+  </div>
+  <div class="control">
+    <input class="input" name="appropriation" type="text" placeholder="Appropriation">
+  </div>
+
+  <div class="field">
+    <label class="label">ABC</label>
+  </div>
+  <div class="control">
+    <input class="input" name="abc" type="text" placeholder="ABC">
+  </div>
+
+  <div class="field">
+    <label class="label">Date Assigned to in Charge</label>
+  </div>
+  <div class="control">
+    <input type="date" id="start" name="dateAssigned" min="01-03-2018" value="01-05-2018" />
+  </div>
+
+  <div class="field">
+    <label class="label">POW Adjusted Assigned Date</label>
+  </div>
+  <div class="control">
+    <input type="date" id="start" name="adjustedAssignedDate" min="01-03-2018" value="01-05-2018" />
+  </div>
+
+  <div class="field">
+    <label class="label">POW Target Completion Date</label>
+  </div>
+  <div class="control">
+    <input type="date" id="start" name="targetCompletionDate" min="01-03-2018" value="01-05-2018" />
+  </div>
+
+  <div class="field">
+    <label class="label">Initial Submission Date</label>
+  </div>
+  <div class="control">
+    <input type="date" id="start" name="initialSubmissionDate" min="01-03-2018" value="01-05-2018" />
+  </div>
+
+  <div class="field">
+    <label class="label">Initial Return Date</label>
+  </div>
+  <div class="control">
+    <input type="date" id="start" name="initialReturnDate" min="01-03-2018" value="01-05-2018" />
+  </div>
+
+  <div class="field">
+    <label class="label">Revised Submission Date</label>
+  </div>
+  <div class="control">
+    <input type="date" id="start" name="revisedSubmissionDate" min="01-03-2018" value="01-05-2018" />
+  </div>
+
+  <div class="field">
+    <label class="label">Revised Return Date</label>
+  </div>
+  <div class="control">
+    <input type="date" id="start" name="revisedReturnDate" min="01-03-2018" value="01-05-2018" />
+  </div>
+
+  <div class="field">
+    <label class="label">Additional Revised Submission Date</label>
+  </div>
+  <div class="control">
+    <input type="date" id="start" name="additionalRevisedSubmissionDate" min="01-03-2018" value="01-05-2018" />
+  </div>
+
+  <div class="field">
+    <label class="label">Additional Revised Return Date</label>
+  </div>
+  <div class="control">
+    <input type="date" id="start" name="additionalRevisedReturnDate" min="01-03-2018" value="01-05-2018" />
+  </div>
+
+  <div class="field">
+    <label class="label">Final Submission Date</label>
+  </div>
+  <div class="control">
+    <input type="date" id="start" name="finalSubmissionDate" min="01-03-2018" value="01-05-2018" />
+  </div>
+
+  <div class="field">
+    <label class="label">Final Return Date</label>
+  </div>
+  <div class="control">
+    <input type="date" id="start" name="finalReturnDate" min="01-03-2018" value="01-05-2018" />
+  </div>
+
+  <div class="field">
+    <label class="label">Actual Approval Date</label>
+  </div>
+  <div class="control">
+    <input type="date" id="start" name="actualApprovalDate" min="01-03-2018" value="01-05-2018" />
+  </div>
+
+  <div class="field">
+    <label class="label">Type/Category</label>
+  </div>
+  <div class="control">
+    <input class="input" name="typeCategory" type="text" placeholder="Type/Category">
+  </div>
+
+  <div class="field">
+    <label class="label">Status</label>
+  </div>
+  <div class="control">
+    <input class="input" name="status" type="text" placeholder="Status">
+  </div>
+
+  <div class="field">
+    <label class="label">Remarks</label>
+  </div>
+  <div class="control">
+    <input class="input" name="remarks" type="text" placeholder="Remarks">
+  </div>
+
+  <button class="button">Save</button>
+</form>
+</body>
+</html>

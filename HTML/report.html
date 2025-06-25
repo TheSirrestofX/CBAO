@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CBAO - Reports</title>
+  <link rel="stylesheet" href="/CSS/dashboard.css">
+  <link rel="stylesheet" href="/CSS/Report.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "firebase/app": "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js",
+      "firebase/firestore": "https://www.gstatic.com/firebasejs/10.11.1/firebase-firestore.js"
+    }
+  }
+  </script>
+  <script type="module" src="/javascript/report.js"></script>
+  <script src="/javascript/search.js"></script>
+  
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo-container">
+      <img src="/Img/CBAO logo.jpg" alt="CBAO Logo" class="logo"/>
+      <span class="logo-text">City Buildings & Architecture Office</span>
+    </div>
+    <nav class="nav-links">
+      <a href="/Auth&Firebase/dashboard.html">Home<i class="fa fa-home"></i></a>
+      <a href="/HTML/profile.html">Profile <i class="fa fa-address-card"></i></a>
+      <a href="https://new.baguio.gov.ph/city-building-and-architecture-office/about">About Us <i class="fa fa-users"></i></a>
+      <a href="/Auth&Firebase/LoginSignup.html">Logout <i class="fa fa-sign-out"></i></a>
+    </nav>
+  </header>
+
+  <div class="reports-container">
+    <h1><i class="fa fa-file-text"></i> Reports</h1>
+
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search reports...">
+      <button id="searchBtn"><i class="fa fa-search"></i></button>
+    </div>
+
+    <div class="reports-table-container">
+      <table id="reportsTable">
+        <thead>
+          <tr>
+            <th>Item Number</th>
+            <th>Project Title</th>
+            <th>Location</th>
+            <th>In Charge</th>
+            <th>Source of Funds</th>
+            <th>Appropriation</th>
+            <th>ABC</th>
+            <th>Date Assigned</th>
+            <th>Adjusted Assigned Date</th>
+            <th>Target Completion Date</th>
+            <th>Initial Submission Date</th>
+            <th>Initial Return Date</th>
+            <th>Revised Submission Date</th>
+            <th>Revised Return Date</th>
+            <th>Additional Revised Submission Date</th>
+            <th>Additional Revised Return Date</th>
+            <th>Final Submission Date</th>
+            <th>Final Return Date</th>
+            <th>Actual Approval Date</th>
+            <th>Type Category</th>
+            <th>Status</th>
+            <th>Remarks</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <footer class="footer">© 2025 CBAO</footer>
+</body>
+</html>

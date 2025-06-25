@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Projects | City Buildings & Architecture</title>
+    <link rel="stylesheet" href="/CSS/Ongoing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="log-container">
+            <img src="/Img/CBAO logo.jpg" alt="CBAO Logo" class="logo">
+            <span class="logo-text">City Buildings & Architecture Office</span>
+        </div>
+        <nav class="nav-links">
+            <a href="/Auth&Firebase/dashboard.html"><i class="fa fa-home">Home</i></a>
+            <a href="/HTML/form.html"><i class="fa fa-plus-square">POW</i></a>
+            <a href="/HTML/report.html"><i class="fa fa-file-text">Reports</i></a>
+            <a href="/HTML/bidding.html"><i class="fa fa-chart-bar">Biddings</i></a>
+            <a href="#"><i class="fa fa-sign-out"></i></a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2><i class="fa fa-refresh">Current Projects</i></h2>
+        <div class="search-filter">
+            <div class="search-bar">
+                <input type="text" id="projectSearch" placeholder="Search projects...">
+                <button id="searchBtn">Search</button>
+            </div>
+            <div class="filter-options">
+                <select id="statusFilter">
+                    <option value="all">All Statuses</option>
+                    <option value="planning">Planning</option>
+                    <option value="active">Active</option>
+                    <option value="delayed">Delayed</option>
+                    <option value="completed">Completed</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="projects-table-container">
+            <table class="projects-table" id="projectsTable">
+                <thead>
+                    <tr>
+                        <th>Project ID</th>
+                        <th>Project Name</th>
+                        <th>Description</th>
+                        <th>Start Date</th>
+                        <th>Target End</th>
+                        <th>Progress</th>
+                        <th>In Charge</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>PRJ-2023-101</td>
+                        <td>Central Park Renovation</td>
+                        <td>Complete renovation of central park facilities</td>
+                        <td>2023-03-15</td>
+                        <td>2023-09-30</td>
+                        <td>
+                            <div class="progress-container">
+                                <div class="progress-bar" style="width: 65%">65%</div>
+                            </div>
+                        </td>
+                        <td>John Smith</td>
+                        <td><span class="status active">Active</span></td>
+                    </tr>
+                    <tr>
+                        <td>PRJ-2023-102</td>
+                        <td>Main Street Bridge</td>
+                        <td>New pedestrian bridge construction</td>
+                        <td>2023-05-01</td>
+                        <td>2023-11-15</td>
+                        <td>
+                            <div class="progress-container">
+                                <div class="progress-bar" style="width: 30%">30%</div>
+                            </div>
+                        </td>
+                        <td>Sarah Johnson</td>
+                        <td><span class="status active">Active</span></td>
+                    </tr>
+                    <tr>
+                        <td>PRJ-2023-103</td>
+                        <td>Downtown Plaza</td>
+                        <td>Public space redesign and modernization</td>
+                        <td>2023-02-10</td>
+                        <td>2023-08-20</td>
+                        <td>
+                            <div class="progress-container">
+                                <div class="progress-bar" style="width: 85%">85%</div>
+                            </div>
+                        </td>
+                        <td>Michael Chen</td>
+                        <td><span class="status active">Active</span></td>
+                    </tr>
+                    <tr>
+                        <td>PRJ-2023-104</td>
+                        <td>Northside Library</td>
+                        <td>New community library construction</td>
+                        <td>2023-01-05</td>
+                        <td>2023-07-30</td>
+                        <td>
+                            <div class="progress-container">
+                                <div class="progress-bar" style="width: 95%">95%</div>
+                            </div>
+                        </td>
+                        <td>Emily Rodriguez</td>
+                        <td><span class="status active">Active</span></td>
+                    </tr>
+                    <tr>
+                        <td>PRJ-2023-105</td>
+                        <td>Riverside Walkway</td>
+                        <td>Development of scenic riverside path</td>
+                        <td>2023-06-01</td>
+                        <td>2023-12-15</td>
+                        <td>
+                            <div class="progress-container">
+                                <div class="progress-bar" style="width: 15%">15%</div>
+                            </div>
+                        </td>
+                        <td>David Wilson</td>
+                        <td><span class="status planning">Planning</span></td>
+                    </tr>
+                    <tr>
+                        <td>PRJ-2023-106</td>
+                        <td>Historic District Restoration</td>
+                        <td>Preservation of historic buildings</td>
+                        <td>2023-04-10</td>
+                        <td>2023-10-31</td>
+                        <td>
+                            <div class="progress-container">
+                                <div class="progress-bar" style="width: 45%">45%</div>
+                            </div>
+                        </td>
+                        <td>Lisa Thompson</td>
+                        <td><span class="status delayed">Delayed</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer class="footer">© 2025 CBAO</footer>
+
+    <script src="/javascript/Projects.js"></script>
+</body>
+</html>

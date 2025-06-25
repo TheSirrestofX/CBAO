@@ -1,0 +1,200 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 70px 0 0; /* Reserve space for fixed navbar */
+  background-image: url(/images/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: sans-serif;
+  min-height: 100vh;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+.navbar {
+  width: 100%;
+  padding: 15px 30px;
+  background-color: #1a1d2b;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.logo-container {
+  margin-right: 0px;
+  font-size: medium;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  height: 40px;
+  width: auto;
+  border-radius: 50%;
+}
+.logo-text {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+h2{
+   color: white;
+   background-color: #1a1d2b;
+   text-align: center; 
+   border-radius: 10px;
+}
+.search-bar {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #2980b9;
+}
+
+.bids-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.bids-table th, .bids-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    border-radius: 1;
+}
+
+.bids-table th {
+     background-color: #3498db;
+    color: white;
+    font-weight: 600;
+}
+
+.bids-table tr:hover {
+    background-color: #f1f9ff;
+}
+
+.status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.status.open {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.status.closed {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.status.review {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.action-btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+.view-btn {
+    padding: 6px 12px;
+    background-color: #3498db;
+    color: white;
+}
+
+.bid-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.view-btn:hover {
+    background-color: #2980b9;
+}
+
+.bid-btn:hover {
+    background-color: #218838;
+}
+
+.footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    color: #7f8c8d;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1a1d2b;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 16px;
+  z-index: 50;
+}

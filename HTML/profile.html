@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Buildings & Architecture - Bidding</title>
+    <link rel="stylesheet" href="/CSS/Bidding.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+    <header class="navbar">
+    <div class="logo-container">
+      <img src="/Img/CBAO logo.jpg" alt="CBAO Logo" class="logo" />
+      <span class="logo-text">City Buildings & Architecture Office</span>
+    </div>
+    <nav class="nav-links">
+      <a href="/Auth&Firebase/dashboard.html">Home <i class="fa fa-home"></i></a>
+      <a href="/HTML/profile.html">Profile <i class="fa fa-address-card"></i></a>
+      <a href="#">Settings <i class="fa fa-cog"></i></a>
+      <a href="/Auth&Firebase/LoginSignup.html">Logout <i class="fa fa-sign-out"></i></a>
+    </nav>
+  </header>
+
+    <div class="container">
+        <h2>Profile</h2>
+        <table class="bids-table" id="reportsTable">
+            <thead>
+                <tr>
+                    <th>Employee Name</th>
+                    <th>Employee ID</th>
+                    <th>Employee Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><p><strong>Name:</strong> <span id="employee-name">Loading...</span></p></td>
+                    <td><p><strong>Employee ID:</strong> <span id="employee-id">Loading...</span></p></td>
+                    <td><p><strong>Email:</strong> <span id="employee-email">Loading...</span></p></td>
+            </tbody>
+        </table>
+
+        
+    </div>
+    <footer class="footer">© 2025 CBAO</footer>
+
+    <script src="/javascript/search.js"></script>
+    <script type="module" src="/Auth&Firebase/profile.js"></script>
+</body>
+</html>

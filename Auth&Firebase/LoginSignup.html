@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register & Login</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+  <script type="module" src="firebaseauth.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="title-text">
+      <div class="title login">Login Form</div>
+      <div class="title signup">Signup Form</div>
+    </div>
+    <div class="form-container">
+      <div class="slide-controls">
+        <input type="radio" name="slide" id="login" checked>
+        <input type="radio" name="slide" id="signup">
+        <label for="login" class="slide login">Login</label>
+        <label for="signup" class="slide signup">Signup</label>
+        <div class="slider-tab"></div>
+      </div>
+      <div class="form-inner">
+
+        <!-- LOGIN FORM -->
+        <form action="#" class="login">
+          <div id="signInMessage" style="display:none;color:red;"></div>
+          <div class="field">
+            <input type="text" id="email" placeholder="Email Address" required>
+          </div>
+          <div class="field">
+            <input type="password" id="password" placeholder="Password" required>
+          </div>
+          <div class="field btn">
+            <div class="btn-layer"></div>
+            <input type="submit" value="Login" id="submitSignIn">
+          </div>
+          <div class="signup-link">Not a member? <a href="">Signup now</a></div>
+        </form>
+
+        <!-- SIGNUP FORM -->
+        <form action="#" class="signup">
+          <div id="signUpMessage" style="display:none;color:red;"></div>
+          <div class="field">
+            <input type="text" id="fName" placeholder="First Name" required>
+          </div>
+          <div class="field">
+            <input type="text" id="lName" placeholder="Last Name" required>
+          </div>
+          <div class="field">
+            <input type="text" id="employeeId" placeholder="Employee ID" required>
+          </div>
+          <div class="field">
+            <input type="text" id="rEmail" placeholder="Email Address" required>
+          </div>
+          <div class="field">
+            <input type="password" id="rPassword" placeholder="Password" required>
+          </div>
+          <div class="field btn">
+            <div class="btn-layer"></div>
+            <input type="submit" value="Signup" id="submitSignUp">
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
